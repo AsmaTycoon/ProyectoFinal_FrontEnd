@@ -7,11 +7,13 @@
     width: auto;
     }
 
-.parte1 .parte2{
+.parte1{
     display: inline-block;
     text-align: justify;
     }
 
-.img-proyecto{
+.parte2{
     box-shadow: 10px 10px 10px #000;
+    display: inline-block;
+    text-align: justify;
 }
