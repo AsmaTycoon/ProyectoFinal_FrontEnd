@@ -1,0 +1,16 @@
+<div class="container" *ngIf="banner">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="imagenB">URL Banner</label>
+                    <input type="text" class="form-control" id="imagenB" name="imagenB" [(ngModel)]="banner.imagenB" required>
+                </div>
+                <button class="btn btn-secondary">
+                    Actualizar banner
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditBannerComponent } from './components/banner/edit-banner.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
@@ -8,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditProyectosComponent } from './components/proyecto/edit-proyectos.component';
+import { NewProyectosComponent } from './components/proyecto/new-proyectos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,7 +20,10 @@ const routes: Routes = [
   { path: 'nuevaedu', component: NeweducacionComponent },
   { path: 'editedu/:id', component: EditEducacionComponent },
   { path: 'newskill', component: NewSkillComponent},
-  { path: 'editskill/:id', component: EditSkillComponent} 
+  { path: 'editskill/:id', component: EditSkillComponent},
+  { path: 'newproyecto', component: NewProyectosComponent},
+  { path: 'editproyecto/:id', component: EditProyectosComponent},
+  { path: 'editbanner/:id', component: EditBannerComponent}
 ];
 
 @NgModule({
