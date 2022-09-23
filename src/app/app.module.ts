@@ -27,6 +27,8 @@ import { NewSkillComponent } from './components/hys/new-skill.component';
 import { EditProyectosComponent } from './components/proyecto/edit-proyectos.component';
 import { NewProyectosComponent } from './components/proyecto/new-proyectos.component';
 import { EditBannerComponent } from './components/banner/edit-banner.component';
+import { NewPersonaComponent } from './components/acerca-de/new-persona.component';
+import { EditPersonaComponent } from './components/acerca-de/edit-persona.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { EditBannerComponent } from './components/banner/edit-banner.component';
     NewSkillComponent,
     EditProyectosComponent,
     NewProyectosComponent,
-    EditBannerComponent
+    EditBannerComponent,
+    NewPersonaComponent,
+    EditPersonaComponent
   ],
   imports: [
     BrowserModule,
