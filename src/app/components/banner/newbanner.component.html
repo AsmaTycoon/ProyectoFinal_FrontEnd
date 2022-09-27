@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="imagenB">URL Imagen</label>
+                    <input type="text" class="form-control" id="imagenB" name="imagenB" [(ngModel)]="imagenB" required>
+                </div>
+                <button class="btn btn-secondary">
+                    Agregar banner
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

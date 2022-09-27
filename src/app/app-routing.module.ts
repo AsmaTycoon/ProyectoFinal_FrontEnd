@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EditPersonaComponent } from './components/acerca-de/edit-persona.component';
 import { NewPersonaComponent } from './components/acerca-de/new-persona.component';
 import { EditBannerComponent } from './components/banner/edit-banner.component';
+import { NewbannerComponent } from './components/banner/newbanner.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'editskill/:id', component: EditSkillComponent},
   { path: 'newproyecto', component: NewProyectosComponent},
   { path: 'editproyecto/:id', component: EditProyectosComponent},
+  { path: 'newbanner', component: NewbannerComponent},
   { path: 'editbanner/:id', component: EditBannerComponent},
   { path: 'editar/:id', component: EditPersonaComponent},
   { path: 'newpersona', component: NewPersonaComponent}

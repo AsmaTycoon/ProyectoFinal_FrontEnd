@@ -29,6 +29,7 @@ import { NewProyectosComponent } from './components/proyecto/new-proyectos.compo
 import { EditBannerComponent } from './components/banner/edit-banner.component';
 import { NewPersonaComponent } from './components/acerca-de/new-persona.component';
 import { EditPersonaComponent } from './components/acerca-de/edit-persona.component';
+import { NewbannerComponent } from './components/banner/newbanner.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { EditPersonaComponent } from './components/acerca-de/edit-persona.compon
     NewProyectosComponent,
     EditBannerComponent,
     NewPersonaComponent,
-    EditPersonaComponent
+    EditPersonaComponent,
+    NewbannerComponent
   ],
   imports: [
     BrowserModule,
