@@ -3,7 +3,7 @@
 }
 div{
     background-color: #a1b5cb;
-    text-align: center;
+    /*text-align: center;*/
 }
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px){
