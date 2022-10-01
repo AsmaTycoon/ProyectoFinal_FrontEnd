@@ -23,11 +23,11 @@ export class PersonaService {
     return this.http.put<any>(this.URL + `editar/${id}`, Persona);
   }
 
-  public detelePersona(id: number): Observable<any>{
+  public deletePersona(id: number): Observable<any>{
     return this.http.delete<any>(this.URL + `borrar/${id}`);
   }
 
-  public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL + 'traer');
+  public getPersona(): Observable<persona[]>{
+    return this.http.get<persona[]>(this.URL + 'traer');
   }
 }
