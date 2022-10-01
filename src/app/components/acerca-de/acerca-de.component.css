@@ -9,7 +9,7 @@ div{
 text-align: center;
 }
 /*Estilo de la foto de perfil*/
-@media (min-width: 576px){
+@media (min-width: 767px){
     #fotodeperfil{
         position: absolute;
         width: 17%;
@@ -19,7 +19,7 @@ text-align: center;
         bottom: -400px;
     }
 }
-@media (max-width: 575px){
+@media (max-width: 767px){
     #fotodeperfil{
         position: absolute;
         width: 45%;
@@ -29,7 +29,7 @@ text-align: center;
         bottom: -150px;
     }
 }
-@media (max-width: 1000px){
+@media (max-width: 1023px){
     #fotodeperfil{
         position: absolute;
         width: 18%;
@@ -39,7 +39,7 @@ text-align: center;
         bottom: -50px;
     }
 }
-@media (max-width: 2000px){
+/*@media (max-width: 2000px){
     #fotodeperfil{
         position: absolute;
         width: 15%;
@@ -48,8 +48,8 @@ text-align: center;
         left: 4%;
         bottom: -40px;
     }
-}
-@media (max-width: 3000px){
+}*/
+/*@media (max-width: 3000px){
     #fotodeperfil{
         position: absolute;
         width: 17%;
@@ -58,8 +58,8 @@ text-align: center;
         left: 3%;
         bottom: -380px;
     }
-}
-@media (min-width: 3000px){
+}*/
+@media (min-width: 1024px){
     #fotodeperfil{
         position: absolute;
         width: 15%;
@@ -69,7 +69,7 @@ text-align: center;
         bottom: 700px;
     }
 }
-@media (min-width: 4000px){
+/*@media (min-width: 4000px){
     #fotodeperfil{
         position: absolute;
         width: 15%;
@@ -78,7 +78,7 @@ text-align: center;
         left: 4%;
         bottom: 1200px;
     }
-}
+}*/
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
