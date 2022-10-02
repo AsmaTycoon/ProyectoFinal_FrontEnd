@@ -1,21 +1,22 @@
 <div class="row">
-    
-    <div class="col-lg-2" >
+    <div>
         <button type="buttom" routerLink="newbanner" class="btn btn-dark" *ngIf="isLogged">Nuevo Banner</button>
     </div>
-    <div class="contenedor" *ngFor="let banner of banner">
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <img src="{{banner.imagenB}}"> 
-        </div>
-        <div>
-            <td *ngIf="isLogged">
-                <button class="btn btn-success" routerLink="/editbanner/{{banner.id}}">
-                    <i class="bi bi-pencil-square"></i></button>
-            </td>
-            <td *ngIf="isLogged">
-                <button class="btn btn-danger" (click)="delete(banner.id)">
-                    <i class="bi bi-trash-fill"></i></button>
-            </td>
-        </div>
+</div>
+
+<div class="container col-lg-12" *ngFor="let banner of banner">
+    <img src="{{banner.imagenB}}" class="img-fluid">
+</div>
+
+<div class="row">
+    <div *ngFor="let banner of banner">
+        <td *ngIf="isLogged">
+            <button class="btn btn-success" routerLink="/editbanner/{{banner.id}}">
+                <i class="bi bi-pencil-square"></i></button>
+        </td>
+        <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(banner.id)">
+                <i class="bi bi-trash-fill"></i></button>
+        </td>
     </div>
 </div>

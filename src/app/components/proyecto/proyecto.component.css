@@ -1,6 +1,7 @@
 .row{
     background-color: #a1b5cb;
     padding: 20px;
+    margin: 0%;
 }
 
 .contenedor{
@@ -16,4 +17,8 @@
     box-shadow: 10px 10px 10px #000;
     display: inline-block;
     text-align: justify;
+    height: 150px;
+}
+h1, h3{
+    display: inline;
 }
