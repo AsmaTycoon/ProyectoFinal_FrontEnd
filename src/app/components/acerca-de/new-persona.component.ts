@@ -20,14 +20,14 @@ export class NewPersonaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCreate(): void {
+  onCreate() {
     const Persona = new persona(this.nombre, this.apellido, this.img, this.titulo, this.descripcion);
     this.personaS.createPersona(Persona).subscribe(
       data => {
-        alert ("Persona creada correctamente")
+        alert ("Persona creada correctamente");
         this.router.navigate(['']);
       }, err => {
-        alert ("Fallo al crear nueva persona")
+        alert ("Fallo al crear nueva persona");
         this.router.navigate(['']);
       }
     )

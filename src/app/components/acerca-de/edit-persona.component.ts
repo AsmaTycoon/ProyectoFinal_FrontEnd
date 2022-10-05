@@ -25,7 +25,7 @@ export class EditPersonaComponent implements OnInit {
     )
   }
 
-  onUpdate(): void {
+  onUpdate() {
     const id = this.activatedRoute.snapshot.params['id'];
     this.personsaS.editPersona(id, this.Persona).subscribe(
       data => {

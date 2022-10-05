@@ -7,9 +7,13 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://backendporfoliocas.herokuapp.com/personas/';
+  URL = 'https://backendporfoliocas.herokuapp.com/personas/'
 
   constructor(private http: HttpClient) { }
+
+  public getPersona(): Observable<persona[]>{
+    return this.http.get<persona[]>(this.URL + 'traer');
+  }
 
   public findPersona(id: number): Observable<persona>{
     return this.http.get<persona>(this.URL+ `traer/perfil/${id}`);
@@ -25,9 +29,5 @@ export class PersonaService {
 
   public deletePersona(id: number): Observable<any>{
     return this.http.delete<any>(this.URL + `borrar/${id}`);
-  }
-
-  public getPersona(): Observable<persona[]>{
-    return this.http.get<persona[]>(this.URL + 'traer');
   }
 }
