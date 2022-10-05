@@ -9,8 +9,8 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  /*persona: persona = new persona("", "", "", "", "");*/
-  persona: persona [] = [];
+  persona: persona = new persona("", "", "", "", "");
+  /*persona: persona[] = [];*/
 
   constructor(private personaService: PersonaService, private tokenService: TokenService) { }
   isLogged= false;

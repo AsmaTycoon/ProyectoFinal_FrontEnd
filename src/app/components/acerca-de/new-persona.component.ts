@@ -20,7 +20,7 @@ export class NewPersonaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCreate() {
+  onCreate(): void {
     const Persona = new persona(this.nombre, this.apellido, this.img, this.titulo, this.descripcion);
     this.personaS.createPersona(Persona).subscribe(
       data => {
