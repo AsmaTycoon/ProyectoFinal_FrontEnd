@@ -15,7 +15,7 @@ export class EditPersonaComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.params['id'];
-    this.personsaS.findPersona(id).subscribe(
+    this.personsaS.detail(id).subscribe(
       data => {
         this.Persona = data;
       }, err => {
@@ -27,7 +27,7 @@ export class EditPersonaComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRoute.snapshot.params['id'];
-    this.personsaS.editPersona(id, this.Persona).subscribe(
+    this.personsaS.update(id, this.Persona).subscribe(
       data => {
         this.router.navigate(['']);
       }, err => {

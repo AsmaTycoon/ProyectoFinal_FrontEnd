@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="persona" *ngIf="persona">
-        <div class="col-lg-2">
-            <button type="buttom" routerLink="newpersona" class="btn btn-dark" *ngIf="isLogged">Nueva Persona</button>
-        </div>
+    <div class="col-lg-2">
+        <button type="buttom" routerLink="newpersona" class="btn btn-dark" *ngIf="isLogged">Nueva Persona</button>
+    </div>
+    <div class="persona" *ngFor="let persona of persona">
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 fotodeperfil">
             <img src="{{persona.img}}">
         </div>

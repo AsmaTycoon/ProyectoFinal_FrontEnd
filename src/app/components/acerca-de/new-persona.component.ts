@@ -22,7 +22,7 @@ export class NewPersonaComponent implements OnInit {
 
   onCreate(): void {
     const Persona = new persona(this.nombre, this.apellido, this.img, this.titulo, this.descripcion);
-    this.personaS.createPersona(Persona).subscribe(
+    this.personaS.save(Persona).subscribe(
       data => {
         alert ("Persona creada correctamente");
         this.router.navigate(['']);
