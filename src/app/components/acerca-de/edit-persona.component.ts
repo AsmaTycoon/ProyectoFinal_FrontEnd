@@ -19,7 +19,7 @@ export class EditPersonaComponent implements OnInit {
       data => {
         this.Persona = data;
       }, err => {
-        alert ("Error al modificar");
+        alert("Error al modificar");
         this.router.navigate(['']);
       }
     )
@@ -31,7 +31,7 @@ export class EditPersonaComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert ("Error al modificar la persona");
+        alert("Error al modificar la persona");
         this.router.navigate(['']);
       }
     )

@@ -10,23 +10,23 @@ export class BannerService {
   URL = 'https://backendporfoliocas.herokuapp.com/banner/'
   constructor(private httpCliente: HttpClient) { }
 
-  public list():Observable<Banner[]>{
+  public list(): Observable<Banner[]> {
     return this.httpCliente.get<Banner[]>(this.URL + 'lista');
   }
 
-  public detail(id: number):Observable<Banner>{
+  public detail(id: number): Observable<Banner> {
     return this.httpCliente.get<Banner>(this.URL + `detail/${id}`);
   }
 
-  public save(banner: Banner): Observable<any>{
+  public save(banner: Banner): Observable<any> {
     return this.httpCliente.post<any>(this.URL + 'create', banner);
   }
 
-  public update(id: number, banner: Banner): Observable<any>{
+  public update(id: number, banner: Banner): Observable<any> {
     return this.httpCliente.put<any>(this.URL + `update/${id}`, banner);
   }
 
-  public delete(id: number):Observable<any>{
+  public delete(id: number): Observable<any> {
     return this.httpCliente.delete<any>(this.URL + `delete/${id}`);
   }
 }
