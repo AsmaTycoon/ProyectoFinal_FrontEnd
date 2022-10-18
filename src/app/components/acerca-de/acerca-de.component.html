@@ -3,12 +3,18 @@
         <button type="buttom" routerLink="newpersona" class="btn btn-dark" *ngIf="isLogged">Nueva Persona</button>
     </div>
     <div class="persona" *ngIf="persona">
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 fotodeperfil">
-            <img src="{{persona.img}}">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <img src="{{persona.img}}" class="img-fluid">
         </div>
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
             <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
             <p>{{persona.titulo}}</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="acerca">
+            <span>
+                <h1>Acerca de mi</h1>
+                <p>{{persona.descripcion}}</p>
+            </span>
         </div>
         <div class="col-lg-2">
             <td *ngIf="isLogged">
@@ -19,12 +25,6 @@
                 <button class="btn btn-danger" (click)="delete(persona.id)">
                     <i class="bi bi-trash-fill"></i></button>
             </td>
-        </div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 acerca">
-            <span>
-                <h1>Acerca de mi</h1>
-                <p>{{persona.descripcion}}</p>
-            </span>
         </div>
     </div>
 </div>
